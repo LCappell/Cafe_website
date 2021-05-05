@@ -1,0 +1,428 @@
+/* Variables */
+
+$nav-color: rgba(0, 0, 0, 0.4);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+/* HEADER */
+/* HERO IMAGE */
+
+#img-hero {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+/* NAV BAR */
+nav {
+  position: relative;
+  font-family: sans-serif;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+
+  width: 100vw;
+}
+
+.nav-title {
+  letter-spacing: 10px;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.nav-items {
+  letter-spacing: 3px;
+  font-size: 25px;
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+
+  li {
+    margin-right: 4rem;
+    list-style: none;
+    background-color: rgb(253, 249, 239);
+    padding: 1px;
+
+    border-radius: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+/* ACTIVE CLASS FOR NAV*/
+
+/* HAMBURGER */
+#hamburger {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+  align-items: flex-end;
+  #more {
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+    background-color: rgba(233, 230, 230, 0.5);
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  #more:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+}
+
+/*  MEDIA */
+
+/* MAIN BODY*/
+
+#first-grid {
+  padding-top: 2em;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  grid-column-gap: 2em;
+  grid-template-areas:
+    "coffeePic coffeeInfo"
+    "coffeePic coffeeInfo";
+}
+
+.coffee-pic {
+  grid-area: coffeePic;
+  width: 40vw;
+  height: 70vh;
+  margin: 60px 30px;
+  border-radius: 8px;
+}
+
+.coffee-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 20px;
+  grid-area: coffeeInfo;
+  line-height: 25px;
+  margin-right: 1.5em;
+
+  p {
+    line-height: 2.5rem;
+    margin: 30px;
+  }
+
+  .icons li {
+    list-style: none;
+    padding: 15px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 25px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+#second-grid {
+  padding-top: 2em;
+  border-top: solid rgba(2, 2, 2, 0.4) 1px;
+  border-bottom: solid rgba(2, 2, 2, 0.4) 1px;
+  font-family: "Poppins", sans-serif;
+  height: 40em;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  grid-column-gap: 2em;
+  grid-template-areas:
+    "MenuInfo foodPic"
+    "MenuInfo foodPic";
+}
+
+.food-pic {
+  grid-area: foodPic;
+  width: 450px;
+  height: 500px;
+  border-radius: 1em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+
+.menu-info {
+  padding: 20px;
+  grid-area: MenuInfo;
+  margin-left: 1.5em;
+  height: 500px;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-list li {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+.menu-list ul {
+  letter-spacing: 3px;
+  line-height: 3rem;
+}
+
+.menu-link {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.menu-link a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+// THIRD GRID
+
+.gallery-title h2 {
+  text-align: center;
+  padding: 15px;
+  font-family: "poppins";
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.photo {
+  width: 23em;
+  height: 23em;
+  margin: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+// FOURTH GRID
+.book-grid {
+  margin-bottom: 50px;
+  margin-top: 2em;
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    "bookpic bookinfo"
+    "bookpic bookinfo";
+}
+.book-title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+
+.book-pic {
+  grid-area: bookpic;
+  border-radius: 2em;
+  margin-left: 2em;
+  margin-top: 2em;
+  width: 420px;
+  height: 500px;
+  position: absolute;
+}
+
+.book-info {
+  grid-area: bookinfo;
+  font-family: sans-serif;
+  font-size: larger;
+}
+
+.book-info form {
+  display: flex;
+  border: 2px solid black;
+  width: 500px;
+  height: 600px;
+  border-radius: 2em;
+  margin: 2em 2em;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 20px 10px;
+  line-height: 5em;
+
+  input {
+    width: 375px;
+    height: 25px;
+    text-align: left;
+  }
+
+  select {
+    width: 375px;
+    height: 25px;
+    text-align: center;
+  }
+
+  button {
+    width: 175px;
+    height: 35px;
+    margin-top: 1.5em;
+    border: none;
+    background-color: rgb(175, 165, 233);
+    border-radius: 2em;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  #hamburger {
+    display: flex;
+    position: absolute;
+    left: 80%;
+    margin-bottom: 15px;
+  }
+
+  #hamburger:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  .nav-items {
+    padding: 15px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 5px;
+      margin-top: 60px;
+      margin-left: 70px;
+      background-color: $nav-color;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  #first-grid {
+    grid-template-areas:
+      "coffeeInfo coffeeInfo"
+      "coffeePic coffeePic";
+  }
+
+  .coffee-pic {
+    width: 80vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+  }
+
+  .photo {
+    width: 13em;
+    height: 13em;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #second-grid {
+    grid-template: 1fr 1fr / 1fr;
+    grid-column-gap: 2em;
+    grid-template-areas:
+      "MenuInfo MenuInfo"
+      "foodPic foodPic";
+  }
+
+  .menu-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .food-pic {
+    width: 50vw;
+    height: 40vh;
+    position: absolute;
+    left: 1;
+    margin-left: 15em;
+    margin-top: 22em;
+    margin-bottom: 5em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .food-pic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .book-pic {
+    display: none;
+  }
+
+  .book-info form {
+    width: 80vw;
+  }
+}
+
+#email label {
+  background-color: green;
+}
+.active {
+  display: flex;
+}
+
+#error-message {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(245, 96, 96);
+  font-weight: bold;
+}

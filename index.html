@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="scss/style.css" />
+    <script defer src="js/page.js"></script>
+    <title>Cafe</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero-image">
+        <img id="img-hero" src="images/cafeimg1.jpeg" alt="cafe hero image" />
+        <nav>
+          <div class="nav-title">/Cafe</div>
+
+          <img
+            id="hamburger"
+            src="/images/nav-hamburger.png"
+            alt="hamburger-image"
+          />
+          <ul class="nav-items">
+            <li><a href="#second-grid"> Menu. </a></li>
+            <li><a href="#third-grid"> Gallery. </a></li>
+            <li><a href="#fourth-grid"> Book. </a></li>
+          </ul>
+        </nav>
+
+        <div class="view-more">
+          <h3 id="more"><a href="#first-grid">View more </a></h3>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="first-grid">
+        <img class="coffee-pic" src="/images/cafeimg2.jpeg" alt="cofeee" />
+
+        <div class="coffee-info">
+          <h2>About /Cafe.</h2>
+
+          <div class="icons">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="fa fa-instagram fa-4x" aria-hidden="true"> </i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as
+          </p>
+        </div>
+      </div>
+
+      <div id="second-grid">
+        <img class="food-pic" src="images/cafeimg3.jpeg" alt="food picture" />
+
+        <div class="menu-info">
+          <div class="menu-title">
+            <h2>/Menu.</h2>
+          </div>
+
+          <div class="total-menu">
+            <div class="menu-list">
+              <ul>
+                <li>Croissant: Finest Pateries .................. £8</li>
+                <li>Croissant: Finest Pateries .................. £4</li>
+                <li>Croissant: Finest Pateries .................. £2.50</li>
+                <li>Croissant: Finest Pateries .................. 80p</li>
+
+                <li>Croissant: Finest Pateries .................. £8</li>
+                <li>Croissant: Finest Pateries .................. £4</li>
+                <li>Croissant: Finest Pateries .................. £2.50</li>
+              </ul>
+
+              <div class="menu-link">
+                <p>
+                  <a href="#" target="_blank">
+                    Click here to view full menu.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="third-grid">
+        <div class="gallery-title">
+          <h2>/Gallery.</h2>
+        </div>
+
+        <div class="gallery">
+          <img class="photo" src="/images/cafeimg4.jpeg" />
+          <img class="photo" src="/images/cafeimg5.jpeg" />
+          <img class="photo" src="/images/cafeimg6.jpeg" />
+          <img class="photo" src="/images/cafeimg7.jpeg" />
+          <img class="photo" src="/images/cafeimg8.jpeg" />
+          <img class="photo" src="/images/cafeimg9.jpeg" />
+          <img class="photo" src="/images/cafeimg10.jpeg" />
+          <img class="photo" src="/images/cafeimg10.jpeg" />
+        </div>
+      </div>
+
+
+      <div id="fourth-grid">
+
+        <div class="book-title">
+            <h1> /Make a booking. </h1>
+            </div>
+    
+    <div class="book-grid">
+    
+    
+    
+    <img class="book-pic" src="images/cafeimg12.jpeg" alt="Booking picture">
+    
+    
+    <div class="book-info">
+
+        <p id="error-message"></p>
+    
+        <form action="index" method="post">
+    
+         
+          
+    
+    <label for="date"> Choose a date: </label>
+    <input type="date" id="date" name="date"
+    
+    
+    <div class="TimePicker">
+        <label for="appt-time">Book a time (opening hours 9:00am to 5:00pm): </label>
+        <select name="time" id="time" >
+    
+            <option value="" disabled selected>Select a time</option>
+                   <option value = "1">10am</option>
+                   <option value = "2">11am</option>
+                   <option value = "3">12pm</option>
+                   <option value = "4">1pm</option>
+                   <option value = "5">2pm</option>
+                   <option value = "6">3pm</option>
+                   <option value = "7">4pm</option>
+                   <option value = "8">5pm</option>
+    
+        </select>  
+    
+    
+    
+    
+        <label for="name"> Enter name: </label>
+        <input type="text" name="text" id="name" size="50" required placeholder="Name">
+        
+    
+        <label for="email"> Enter Email: </label>
+        <input type="email" name="email" id="email" size="50" required placeholder="Email">
+    
+    
+        <button type=“submit">Submit</button>
+
+        </div>
+    </form>
+    </div>
+
+    </div>
+    </main>
+  </body>
+</html>
